@@ -27,7 +27,7 @@
 
     /* input config for snipe mode */
     trackball_snipe_listener {
-        compatible = "zmk,input-behavior-listener";   
+        compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
         layers = <8>;
         evt-type = <INPUT_EV_REL>;
@@ -42,7 +42,7 @@
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
         layers = <9>;
-        evt-type = <INPUT_EV_REL>;            
+        evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_MISC>;
         y-input-code = <INPUT_REL_WHEEL>;
         y-invert;
@@ -123,15 +123,25 @@
             key-positions = <28 37>;
         };
 
-        RightClick {
-            bindings = <&mkp RCLK>;
-            key-positions = <16 37>;
-        };
-
         BASE_or_EXTRAS {
             bindings = <&td_bore>;
             key-positions = <38 39>;
         };
+
+        LeftClick {
+            bindings = <&mkp LCLK>;
+            key-positions = <19 20>;
+        };
+
+         RightClick {
+            bindings = <&mkp RCLK>;
+            key-positions = <20 21>;
+        };
+
+        Scroll {
+          bindings = <&lt 9>;
+          key-positions = <19 20 21>;
+        }
 
         // GameLayer {
         //     bindings = <&tog 4>;
