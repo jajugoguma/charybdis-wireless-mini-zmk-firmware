@@ -139,7 +139,7 @@
         };
 
         WheelScroll {
-            bindings = <&to 9>;
+            bindings = <&mo 9>;
             key-positions = <19 20 21>;
         };
 
