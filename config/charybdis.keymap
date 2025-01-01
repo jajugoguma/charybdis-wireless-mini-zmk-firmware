@@ -133,12 +133,12 @@
             key-positions = <19 20>;
         };
 
-         RightClick {
+        RightClick {
             bindings = <&mkp RCLK>;
             key-positions = <20 21>;
         };
 
-        Scroll {
+        WheelScroll {
           bindings = <&lt 9>;
           key-positions = <19 20 21>;
         };
