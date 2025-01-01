@@ -385,7 +385,11 @@ combos:
   l: [BASE]
 - p: [28, 37]
   k: M CLK
-- p: [16, 37]
-  k: R CLK
 - p: [38, 39]
   k: L_BASE L_EXTRA
+- p: [19, 20]
+  k: L CLK
+- p: [20, 21]
+  k: R CLK
+- p: [19, 20, 21]
+  k: {t: SCROLL, h: toggle}
